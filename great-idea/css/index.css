@@ -86,10 +86,12 @@ body {
 	padding: 30px 0px 40px;
 	margin: 20px;
 	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
   }
   
   .Header .HeaderTitle h1 {
-	font-size: 70px;
+	font-size: 80px;
 	padding: 50px 70px 0px;
 	width: 50%; 
   }
@@ -112,50 +114,59 @@ body {
 	border-top: 1px dashed black;
 	padding: 40px 0px 40px;
 	display: flex;
-	width: 100%; 
-	border: 2px solid red; 
+	flex-direction: row; 
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	width: 100%;  
   }
   
   .TopContent .Features {
 	/*display: inline-block;*/
 	padding: 20px 10px 20px;
 	width:48%;
-	border: 2px solid red;
   }
   
   .TopContent .About{
 	/*display: inline-block; */
 	padding: 20px 10px 20px; 
-	width: 48%;
-	border: 2px solid red; 
+	width: 48%; 
   }
 
   .MiddleImage {
 	  width: 100%;
 	  padding: 20px 0px 20px; 
+	  display: flex; 
+	  flex-flow: row wrap;
+	  justify-content: space-evenly; 
+  }
+
+  .ImageItself {
+	  flex-basis: auto; 
   }
   
   .BottomContent {
 	width: 100%;
-	display: inline-block;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
 	padding: 40px 0px 40px;
 	margin-bottom: 10px; 
   }
   
   .BottomContent .Services {
-	display: inline-block;
+	/*display: inline-block;*/
 	padding: 20px 5px 20px;
 	width: 31%;
   }
   
   .BottomContent .Product {
-	display: inline-block;
+	/*display: inline-block;*/
 	padding: 20px 5px 20px; 
 	width: 31%;
   }
   
   .BottomContent .Vision {
-	display: inline-block;
+	/*display: inline-block;*/
 	padding: 20px 5px 20px;
 	width: 31%;
   }
@@ -166,6 +177,7 @@ body {
   
   .FooterContent .Contact {
 	margin-top: 20px;
+	margin-bottom: 15px;
 	}
   .FooterContent .Copyright {
 	text-align: center;
